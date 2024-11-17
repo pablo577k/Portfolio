@@ -1,0 +1,542 @@
+/* Remove Default Margins Paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER SECTION STYLES */
+.head {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem;
+    align-items: center;
+}
+
+.logo {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    padding: 0.1rem;
+    border-radius: 50%;
+}
+
+.name-logo {
+    display: flex;
+}
+
+.user-name {
+    color: white;
+    align-items: center;
+}
+
+.user-name h1 {
+    padding: 0.3rem;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    /* padding: 0.2rem; */
+}
+
+.hyperlinks {
+    padding: 0.1rem;
+    align-items: center;
+}
+
+.hyperlinks a {
+    margin-right: 0.7rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Styling Hire Me Button */
+.hire button {
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 0.3rem;
+    background-color: orange;
+    cursor: pointer;
+    border: none;
+}
+.hiree button {
+    display: none;
+}
+
+/* hidden hamburger  */
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* Hidden checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Hidden Mobile menu */
+.mobile-menu {
+    display: none;
+}
+
+/* Show mobile menu when checkbox is checked */
+.menu-toggle:checked ~ .mobile-menu {
+    /* Show mobile menu */
+    display: flex;
+}
+
+
+/* Parallax Section Styles */
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+.parallax-1 {
+    /* Parallax Background */
+    background-image: url('./parallax.jpg');
+}
+
+.parallax-2 {
+    /* Parallax Background */
+    background-image: url('./parallax.jpg');
+}
+
+/* CONTENT INSIDE PARALLAX SECTION */
+.container {
+    position: absolute;
+    max-width: 50vw;
+    width: auto;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.6);
+    border-radius: 1rem;
+    bottom: 6vh;
+    left:3vw;
+    padding: 1rem;
+    border: 0.2rem solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.photo {
+    position: absolute;
+    padding: 0.1rem;
+    width: 5.6rem;
+    height: 5.6rem;
+    background-color: #333;
+    border-radius: 50%;
+    top: -3.8rem;
+    left: 3.5rem;
+    border: 0.2rem solid black;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    top: 2rem;
+}
+
+.hy {
+    position: relative;
+    top: -1.2rem;
+    font-size: 1.5rem;
+}
+
+.about-me {
+    position: relative;
+    text-indent: 4rem;
+    top: -1.2rem;
+    font-size: 1.1rem;
+}
+
+/* Normal Section Styles */
+.normal-section {
+    height: auto;
+    padding: 3.12vh 1.25vw;
+    background-color: rgba(0, 0, 0, 0.723);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 100%;
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.6); /*0.6 Denoted the opacity*/
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.box {
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 2px 2px #ccc;
+    width: 20rem;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.5);
+    margin: 1rem;
+    justify-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.heading h3 {
+    padding: 0.2rem;
+}
+
+.media {
+    position: relative;
+    width: 13rem;
+    height: 6.5rem;
+    bottom: -0.3rem;
+}
+
+
+/* WORK CONTAINER STYLES i.e. parallax-2 */
+.work-container {
+    position: relative;
+    height: 80vh;
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    gap: 1rem;
+    border-radius: 2%;
+}
+
+.work-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.work-container h3 {
+    /* position: relative; */
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Set Slider container */
+.image-slider {
+    background-color: #007BFF;
+    width: 80%;
+    height: 85%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border-radius: 2%;
+}
+
+/* all slide will be a full-size background image */
+.image-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 5px 5px red;
+    background-size: cover;
+    background-position: center;
+    opacity: 0; /* Start with invisible state */
+    animation: slideAnimation 15s infinite; /* 15s -> 3 images (5 seconds each) */
+    border-radius: 2%;
+}
+
+/* Fade between images */
+@keyframes slideAnimation {
+    0%, 33.33% {
+        opacity: 1;
+    }
+    66.66%, 100% {
+        opacity: 0;
+    }
+}
+
+/* make each image appear at different times */
+.image-slide:nth-child(1) {
+    animation-delay: 0s; /* First image starts immediately */
+}
+
+.image-slide:nth-child(2) {
+    animation-delay: 5s; /* Second image after 5 seconds */
+}
+
+.image-slide:nth-child(3) {
+    animation-delay: 10s; /* Third image after 10 seconds */
+}
+
+
+/* FOOTER SECTION STYLES */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    flex: 1 1 300px;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 8px;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #007BFF;
+}
+
+/* Social Media Styles */
+.social-media {
+    flex: 1 1 200px;
+    max-width: 300px;
+}
+
+.social-media h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.social-media ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media ul li {
+    display: inline;
+}
+
+.social-media ul li a {
+    display: inline-block;
+}
+
+.social-media ul li img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-media ul li img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .hyperlinks {
+        /* Do NOT Show links on mobile */
+        display: none;
+    }
+
+    .hire {
+        display: none;
+    }
+    .hiree button {
+        margin-right: 1rem;
+        display: block;
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        border-radius: 0.3rem;
+        background-color: orange;
+        cursor: pointer;
+        border: none;
+    }
+    
+    .hamburger {
+        /* Do NOT Show hamburger on PC */
+        display: block;
+    }
+    
+    .menu-toggle:checked + .hamburger + .hyperlinks {
+        padding: 0.1rem;
+        /* Show nav links when hamburger is clicked */
+        display: flex; 
+        /* Stack links vertically */
+        flex-direction: column;
+        position: absolute;
+        top: 3.5rem;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        z-index: 1;
+    }
+
+
+    .content h1 {
+        font-size: 2.5em;
+    }
+
+    .content p {
+        font-size: 1.2em;
+    }
+
+    .normal-section h2 {
+        font-size: 2em;
+    }
+
+    .normal-section p {
+        font-size: 1em;
+    }
+
+    .work-container {
+        gap: 0.7rem;
+    }
+
+    .work-container h3 {
+        font-size: 2rem;
+    }
+
+    .container {
+        max-width: 70vw;
+        left: 4vw;
+    }
+
+    .image-slider {
+        max-width: 90%;
+        max-height: 80%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form,
+    .social-media {
+        flex: 1 1 100%;
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .image-slider {
+        width: 80vw;
+        height: 80vw; 
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        left: auto;
+        max-width: 80vw;
+    }
+
+    .work-container {
+        gap: none;
+        width: 85vw;
+    }
+
+    .work-container h3 {
+        font-size: 2rem;
+    }
+
+    .contact-form h3,
+    .social-media h3 {
+        font-size: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 14px;
+    }
+
+    .image-slider {
+        width: 80vw;
+        height: 80vw;
+    }
+}
